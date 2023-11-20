@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMPRION GmbH | myCOMPRION-Login</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body style="background-image: url('./media/img/bg-img-2.jpg');">
+  <div class="body-overlay">
+
+    <header id="header">
+      <div class="menu-toggler-container">
+        <p>MENU</p>
+        <button id="nav-toggler" class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="logo-container">
+        <img src="./media/logos/COMPRION_RGB_1000px.png" alt="COMPRION Logo" />
+      </div>
+      <nav id="header-nav-main">
+        <ul class="nav-items">
+          <li><a href="https://www.comprion.com/" target="_blank">Website</a></li>
+          <li><a href="https://www.comprion.com/support/support/" target="_blank">Support</a></li>
+          <li><a href="https://www.comprion.com/contact/overview/" target="_blank">Contact</a></li>
+          <li><a href="https://www.comprion.com/career/" target="_blank">Career</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <nav id="header-nav-meta">
+        <ul class="nav-items">
+          <li><a href="https://www.comprion.com/impressum/" target="_blank">Imprint</a></li>
+          <li><a href="https://www.comprion.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <nav id="header-nav-social-media">
+        <ul class="nav-logo-items">
+          <li> <a href="https://www.facebook.com/COMPRION/">
+              <img class="social-media-icon" src="./media/icons/facebook.svg" alt="COMPRION Facebook" /> </a> </li>
+          <li> <a href="https://de.linkedin.com/company/comprion">
+              <img class="social-media-icon" src="./media/icons/linkedin.svg" alt="COMPRION LinkedIn" /> </a> </li>
+          <li> <a href="https://www.youtube.com/@COMPRION2009">
+              <img class="social-media-icon" src="./media/icons/youtube.svg" alt="COMPRION YouTube" /> </a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="introduction">
+      <div class="wrapper">
+        <div class="container">
+          <h1>COMPRION at #TRUSTECH 2023</h1>
+          <p>From 28 to 30 November 2023, COMPRION will attend TRUSTECH in Paris. Meet our experts at booth C042 to discuss your latest challenges in the field of contactless and mobile communication.</p>
+          <a href="https://www.trustech-event.com/" target="_blank"><button
+              class="btn btn-gray-dark">Get your free Visitor Badge </button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="main-image">
+      <div class="wrapper">
+        <div class="container">
+          <img class="main-image" src="./media/img/trustech_transparent_small.png" alt="COMPRION #TRUSTECH23">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="container">
+          <nav id="footer-nav-social-media">
+            <ul class="nav-logo-items">
+              <li><a href="https://www.facebook.com/COMPRION/"><img class="social-media-icon"
+                    src="./media/icons/facebook.svg" alt="COMPRION Facebook" /></a></li>
+              <li><a href="https://de.linkedin.com/company/comprion"><img class="social-media-icon"
+                    src="./media/icons/linkedin.svg" alt="COMPRION LinkedIn" /></a></li>
+              <li><a href="https://www.youtube.com/@COMPRION2009"><img class="social-media-icon"
+                    src="./media/icons/youtube.svg" alt="COMPRION YouTube" /></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="container">
+          <nav id="footer-nav-meta">
+            <ul class="nav-items">
+              <li><a href="https://www.comprion.com/impressum/" target="_blank">Imprint</a> </li>
+              <li><a href="https://www.comprion.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+              <li><a href="https://www.comprion.com/contact/overview/" target="_blank">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let toggler = document.getElementById("nav-toggler");
+    let header = document.getElementById("header");
+    let menuToggler = document.querySelector(".menu-toggler-container");
+
+    toggler.addEventListener("click", navToggler);
+
+    function navToggler() {
+      toggler.classList.toggle("is-active");
+      header.classList.toggle("nav-open");
+      menuToggler.classList.toggle("menu-toggler-container-active")
+    }
+  });
+</script>
